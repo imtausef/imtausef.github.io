@@ -352,6 +352,7 @@ img.mockup-image {
     border-bottom: 1px solid #000;
     box-shadow: 0px 2px 0px #0000002e;
     z-index: 1;
+    width: -webkit-fill-available;
 }
 .dtr-bg-mockup{    
     /* border-bottom: 1px solid #000;
@@ -368,6 +369,9 @@ img.mockup-image {
     overflow: hidden;
     scale: 0.87;
 }
+.tab-content .tab-pane ul li {
+    list-style: inside;
+}
 .tab-content .tab-pane ul li b {
     background-color: #d5f1f9;
     padding: 3px 8px;
@@ -375,6 +379,12 @@ img.mockup-image {
 /* padding top for responsive hero section */
 @media (max-width: 992px) {
 .dtr-hero-section-padding { padding-top: 30px; }
+}
+@media (max-width: 600px) {
+.dtr-pb-100, .dtr-py-100 { padding-bottom: 60px !important }
+.dtr-pt-100, .dtr-py-100 { padding-top: 60px !important }
+.dtr-hero-section-top-padding{padding-top: 120px;}
+.dtr-bg-mockup{height: 19.5em;}
 }
 /*----------------------------------------*/
 /*----- 10 Header -----*/
